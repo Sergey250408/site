@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Свяжитесь со мной">
+	<meta name="keywords" content="контакты, форма обратной связи, отправка сообщения">
+	<title>Написать мне</title>
+    <link rel="stylesheet"href="style2.css">
+    <style>
+		body {
+			background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMtsnBsXR1LTOOI7Xpi88R6T102GKzWYPHg&usqp=CAU');
+		}
+	</style>
+</head>
+<body>
+	<h1>Написать мне</h1>
+	<form>
+		<label for="sender-name">Имя отправителя:</label><br>
+		<input type="text" id="sender-name" name="sender-name" required><br><br>
+        <label for="sender-email">Почтовый ящик отправителя:</label><br>
+        <input type="email" id="sender-email" name="sender-email" required><br><br>
+        
+        <label for="phone-number">Номер телефона:</label><br>
+        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" required><br><br>
+        
+        <label>Как обращаться к Вам в дальнейшем:</label><br>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Уважаемый</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Уважаемая</label><br><br>
+        
+        <label for="email-topic">Тема сообщения:</label><br>
+        <select id="email-topic" name="email-topic">
+            <option value="Жалоба">Жалоба</option>
+            <option value="Предложение">Предложение</option>
+            <option value="Дружба">Дружба</option>
+            <option value="Совместный проект">Совместный проект</option>
+            <option value="Другое">Другое</option>
+        </select><br><br>
+        
+        <label for="email-message">Сообщение:</label><br>
+        <textarea id="email-message" name="email-message" required></textarea><br><br>
+        
+        <label for="email-attachment">Прикрепить файл:</label><br>
+        <input type="file" id="email-attachment" name="email-attachment"><br><br>
+        
+        <input type="checkbox" id="personal-data-agreement" name="personal-data-agreement" required>
+        <label for="personal-data-agreement">Я согласен на обработку персональных данных</label><br><br>
+        
+        <input type="submit" value="Отправить письмо">
+    </form>
+
+</body>
+<header>
+    <nav>
+        <button class="btn" type="button">
+            <strong>
+              <a href="index.html">Главная</a></li>
+            </strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+          
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+          <button class="btn" type="button">
+            <strong>
+              <a href="interests.html">Хобби</a></li>
+            </strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+          
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+          <button class="btn" type="button">
+            <strong>
+              <a href="contacts.html">Контакты</a></li>
+            </strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+          
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+    </nav>
+</body>
+</header>
+</html>    
